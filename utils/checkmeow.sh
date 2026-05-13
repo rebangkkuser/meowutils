@@ -1,10 +1,18 @@
 #!/bin/sh
 
-ORANGE="\e[38;5;214m"
-GREEN="\e[38;5;82m"
-RED="\e[38;5;203m"
-RESET="\e[0m"
+ORANGE="$(printf '\033[38;5;214m')"
+GREEN="$(printf '\033[38;5;82m')"
+RED="$(printf '\033[38;5;203m')"
+RESET="$(printf '\033[0m')"
 
-command -v startxfce4 && echo -e "${ORANGE}[INFO]${RESET} startxfce4 is installed || echo -e "${ORANGE}[INFO]${RESET}A startxfce4 is not installed
-command -v catusr && echo -e "${GREEN}[FOUND]${RESET} catusr is installed!"
+if command -v startxfce4 >/dev/null 2>&1; then
+  echo -e "${ORANGE}[INFO]${RESET} startxfce4 is installed"
+else
+  echo -e "${ORANGE}[INFO]${RESET} startxfce4 is not installed"
+fi
+
+if command -v catusr >/dev/null 2>&1; then
+  echo -e "${GREEN}[FOUND]${RESET} catusr is installed!"
+fi
+
 echo "checkmeow v0.1.0b1 by bangkkuser"
