@@ -1,5 +1,8 @@
 # meowutils🐱
 meowutils - a library of commands written on Bash and Makefile
+> [!WARNING]
+> This project is on Alpha/Beta versions. Beta and alpha issues will only be open until the test ends and meowutils migrates to a stable version.
+---
 Supports:
 - Android
 - Linux
