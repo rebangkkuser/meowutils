@@ -34,6 +34,7 @@ echo "WARNING:Copying only glibc/libc.so and Toybox needed binaries libs. You wi
 sudo cp /usr/bin/sh /usr/bin/rm /usr/bin/cp  /usr/bin/ls "$HOME/chrootfs/usr/bin/"
 sudo cp /usr/sbin/sudo "$HOME/chrootfs/usr/sbin"
 sudo cp /usr/lib64/libc.so "$HOME/chrootfs/usr/lib64/libc.so" > /dev/null 2>&1
+sudo cp "/usr/lib64/libc++.so" "$HOME/chrootfs/usr/lib64/libc++.so" > /dev/null 2>&1
 sudo mount --bind /dev "$HOME/chrootfs/dev"
 sudo mount --bind /proc "$HOME/chrootfs/proc"
 sudo mount --bind /sys "$HOME/chrootfs/sys"
