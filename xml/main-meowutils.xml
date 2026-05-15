@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- meowutils requirements and recommended OSes -->
+<main-meowutils>
+
+  <reccomendedOS>
+    <Debian>Debian REL 12 (Bookworm)</Debian>
+    <AOSP>SDK REL 24 (Nougat)+</AOSP>
+    <Ubuntu>Ubuntu REL 24.04 LTS</Ubuntu>
+  </reccomendedOS>
+
+  <req>
+    <GNUcoreutils>Any version</GNUcoreutils>
+    <make>Any version</make>
+    <bash>Any version</bash>
+  </req>
+
+  <altreq>
+    <zsh>Alternative to bash. Any version</zsh>
+  </altreq>
+
+  <paths>
+    <path>/usr/local/bin</path>
+    <path>/usr/local/sbin</path>
+    <path>/usr/local/games</path>
+  </paths>
+
+</main-meowutils>
