@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meowbox>
+  <about>
+    <why>MeowBox is the meowutils programs compacted on a file</why>
+    <version>MeowBox 0.1.0 Beta 1</version>
+    <compacttypes>tar.gz, tar.xz</compacttypes>
+  </about>
+  <latest>
+    <releases-tar.gz>https://github.com/rebangkkuser/meowutils/releases/download/mbox010b1/meowbox-0.1.0-BETA1.tar.gz</releases-tar.gz>
+    <filename-releases-tar.gz>meowbox-0.1.0-BETA1.tar.gz</filename-releases-tar.gz>
+    <releases-tar.xz>N/A</releases-tar.xz>
+    <filename-releases-tar.xz>N/A</filename-releases-tar.xz>
+  </latest>
+  <latest-size>
+    <tar.gz>1.15K</tar.gz>
+    <tar.xz>0.00B</tar.xz>
+  </latest-size>
+</meowbox>
