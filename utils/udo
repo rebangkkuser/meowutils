@@ -1,5 +1,2 @@
 #!/bin/sh
-
-read user
-read cmd
-su "$user" -c "$cmd"
+su "$1" -c "$2"
