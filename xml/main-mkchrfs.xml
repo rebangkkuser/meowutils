@@ -1,0 +1,8 @@
+<mkchrfs>
+  <requests>
+    <r1>bash or zsh</r1>
+    <r2>chroot installed</r2>
+    <r3>root (sudo)</r3>
+    <r4>minimal shell familiarity</r4>
+  </requests>
+</mkchrfs>
