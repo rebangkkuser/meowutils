@@ -4,15 +4,32 @@ ORANGE="$(printf '\033[38;5;214m')"
 GREEN="$(printf '\033[38;5;82m')"
 RED="$(printf '\033[38;5;203m')"
 RESET="$(printf '\033[0m')"
+echo -e "${RED}      _               _
+  ___| |__   ___  ___| | ___ __ ___   ___  _____      __
+ / __| '_ \ / _ \/ __| |/ / '_ ` _ \ / _ \/ _ \ \ /\ / /
+| (__| | | |  __/ (__|   <| | | | | |  __/ (_) \ V  V /
+ \___|_| |_|\___|\___|_|\_\_| |_| |_|\___|\___/ \_/\_/ ${RESET}"
+echo -e "${ORANGE}Our GitHub: https://github.com/rebangkkuser/meowutils${RESET}"
+echo -e "This package is from the meowutils program."
 
-if command -v startxfce4 >/dev/null 2>&1; then
-  echo -e "${ORANGE}[INFO]${RESET} startxfce4 is installed"
-else
-  echo -e "${ORANGE}[INFO]${RESET} startxfce4 is not installed"
+if command -v catelf >/dev/null 2>&1; then
+  echo -e "${GREEN}[FOUND]${RESET} catelf is installed!"
 fi
 
-if command -v catusr >/dev/null 2>&1; then
-  echo -e "${GREEN}[FOUND]${RESET} catusr is installed!"
+if command -v udo >/dev/null 2>&1; then
+  echo -e "${GREEN}[FOUND]${RESET} udo is installed!"
 fi
 
-echo "checkmeow v0.1.0b1 by bangkkuser"
+if command -v checkmeow >/dev/null 2>&1; then
+  echo -e "${GREEN}[FOUND]${RESET} checkmeow is installed on the PATH dir/s"
+fi
+
+if command -v notes-cli >/dev/null 2>&1; then
+  echo -e "${GREEN}[FOUND]${RESET} notes-cli is installed!"
+fi
+
+if command -v mkchrfs >/dev/null 2>&1; then
+  echo -e "${GREEN}[FOUND]${RESET} mkchrfs is installed!"
+fi
+
+echo -e "${GREEN}meowutils check v0.1 beta 2: made with affection and love${RESET}"
