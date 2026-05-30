@@ -1,0 +1,7 @@
+id=meowutils-magisk
+name=Meowutils for Magisk
+version=0.2.0-r1
+versionCode=1
+author=bangkkuser
+description=meowutils commands for rooted Android devices. not full meowutils
+updateJson=https://raw.githubusercontent.com/rebangkkuser/meowutils/refs/heads/main/module/update/update.json
