@@ -1,12 +1,20 @@
 #!/bin/sh
-elfpath="${@:1}"
+
+VERSION=0.1
+echo "catelf version ${VERSION}."
+echo "WARNING: We are not responsible if anything breaks! Avoid running on malicious ELFs."
+if [ -z "$1" ]; then
+    echo "No argument provided. Exiting"
+    exit 1
+fi
+elfpath="${1}"
 
 echo "Required libraries:"
 ldd $elfpath
 echo "ELF header:"
-readelf -h $elfpath
+readelf -h "$elfpath"
 echo "ELF strings:"
-strings $elfpath
+strings "$elfpath"
 echo "ELF type/architecture:"
-file $elfpath
-exit 0
+file "$elfpath"
+exit "$?"
