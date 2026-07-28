@@ -1,6 +1,6 @@
 #!/bin/sh
-echo "Please put file path here"
-  read elfpath
+elfpath="${@:1}"
+
 echo "Required libraries:"
 ldd $elfpath
 echo "ELF header:"
